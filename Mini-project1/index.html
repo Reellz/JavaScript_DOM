@@ -9,32 +9,46 @@
 </head>
 
 <body>
+    <h2>Enter some text. </h2>
+    <textarea name="textarea" id="textarea"></textarea>
+    <button id="add-text">Add text</button>
+    
+    <!-- Text Box -->
+    <h3>Text Box</h3>
+    <ul id="text-box"></ul>
+
     <section class="dropdowns">
-        <label for="fruits">Choose a font-color:</label>
-        <select id="fruits" name="fruit_selection">
+        <!-- Color -->
+        <label for="colors">Choose a font-color:</label>
+        <select id="colors" name="color_selection">
             <option value="" selected>Select a color: </option>
             <option value="red">Red</option>
             <option value="green">Green</option>
             <option value="purple">Purple</option>
-        </select>
-        <label for="fruits">Choose a font-size:</label>
-        <select id="fruits" name="fruit_selection">
-            <option value="" selected>Select a font-size</option>
-            <option value="apple">Apple</option>
-            <option value="banana">Banana</option>
-            <option value="cherry">Cherry</option>
+            <option value="blue">Blue</option>
         </select>
 
-        <label for="fruits">Choose a font-style:</label>
-        <select id="fruits" name="fruit_selection">
-            <option value="grape" selected>Select a font-family</option>
-            <option value="apple">Apple</option>
-            <option value="banana">Banana</option>
-            <option value="cherry">Cherry</option>
+        <!-- Font Size -->
+        <label for="font-size">Choose a font-size:</label>
+        <select id="font-size" name="size_selection">
+            <option value="" selected>Select a font-size</option>
+            <option value="14px">Small</option>
+            <option value="18px">Medium</option>
+            <option value="24px">Large</option>
+            <option value="32px">Extra Large</option>
+        </select>
+
+        <!-- Font Family -->
+        <label for="font-family">Choose a font-family:</label>
+        <select id="font-family" name="font_selection">
+            <option value="" selected>Select a font-family</option>
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="'Times New Roman', serif">Times New Roman</option>
+            <option value="Courier New, monospace">Courier New</option>
+            <option value="Georgia, serif">Georgia</option>
         </select>
     </section>
 
     <script src="./index.js"></script>
 </body>
-
 </html>
