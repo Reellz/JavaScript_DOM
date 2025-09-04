@@ -4,7 +4,7 @@ const count = document.querySelector("#count");
 const maxLength = 200;
 
 // listen for input event
-textArea.addEventListener('input', function(){
+textArea.addEventListener('input', () =>{
     if (textArea.value.length > maxLength){
         textArea.value = textArea.value.substring(0, maxLength);
     }
@@ -12,4 +12,11 @@ textArea.addEventListener('input', function(){
 
     // Update the counter
     count.innerText = `${remaining} characters remaining`;
+
+    // Change of styling when limit is reached
+    if (remaining === 0) {
+        count.style.color = "red";
+    } else {
+        count.style.color = "black";
+    }
 })
