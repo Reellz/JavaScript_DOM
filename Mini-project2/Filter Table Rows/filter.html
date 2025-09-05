@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Search</title>
+  <link rel="stylesheet" href="./filter.css">
+</head>
+<body>
+  <h2>Searchable Table</h2>
+
+  <!-- Search bar -->
+  <div class="search-wrapper">
+    <label for="search">Search:</label>
+    <input type="text" id="search" placeholder="Type to filter rows...">
+    <button id="clear-btn">Clear</button>
+    <p id="feedback">Showing all results</p>
+  </div>
+
+  <!-- Table -->
+  <table id="data-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alice</td>
+        <td>Developer</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>Designer</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Clara</td>
+        <td>Manager</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>Developer</td>
+        <td>Germany</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="./filter.js"></script>
+</body>
+</html>
