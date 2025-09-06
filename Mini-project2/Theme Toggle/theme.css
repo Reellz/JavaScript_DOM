@@ -1,0 +1,41 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Light mode (default) */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+body.light button {
+  background: #333;
+  color: #fff;
+}
+
+body.dark button {
+  background: #f1f1f1;
+  color: #333;
+}
